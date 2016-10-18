@@ -10,4 +10,12 @@ public class DrawTriangle {
 			tt.right(120);
 		}
 	}
+	
+	public DrawTriangle(int size) {
+		drawTriangle(size);
+	}
+	
+	public static void main(String[] args) {
+		new DrawTriangle(100);
+	}
 }

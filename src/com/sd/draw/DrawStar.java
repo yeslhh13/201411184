@@ -12,4 +12,12 @@ public class DrawStar {
 			tt.left(72);
 		}
 	}
+	
+	public DrawStar(int size) {
+		drawStar(size);
+	}
+	
+	public static void main(String[] args) {
+		new DrawStar(100);
+	}
 }
