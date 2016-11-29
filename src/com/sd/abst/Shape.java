@@ -1,4 +1,4 @@
-package com.sd.itrf;
+package com.sd.abst;
 
 public abstract class Shape {
 	public String name = "Shape";

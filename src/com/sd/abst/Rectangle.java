@@ -1,4 +1,4 @@
-package com.sd.itrf;
+package com.sd.abst;
 //using abstract class
 public class Rectangle extends Shape {
 	private double width, height;
