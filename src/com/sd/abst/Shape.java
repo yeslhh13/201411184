@@ -8,6 +8,6 @@ public abstract class Shape {
 		return name;
 	}
 	public String toString() {
-		return "Shape..." + super.toString();
+		return "Shape " + super.toString();
 	}
 }

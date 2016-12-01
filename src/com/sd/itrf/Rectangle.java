@@ -1,4 +1,5 @@
 package com.sd.itrf;
+
 //using interface
 public class Rectangle implements Shape {
 	private double width, height;
