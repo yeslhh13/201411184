@@ -29,6 +29,7 @@ public class CalcAreaGUIMain2 extends JFrame implements ActionListener {
 		btn2 = new JButton("Cancel");
 		
 		btn1.addActionListener(this);
+		btn2.addActionListener(this);
 		
 		//first line
 		pnl.add(lb1);
@@ -48,13 +49,21 @@ public class CalcAreaGUIMain2 extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton btn = (JButton)e.getSource();
-		btn.setText("Calculation Complete.");
+		if (btn == btn1) {
+			//Compute 버튼 클릭
+			btn.setText("Complete.");
+				
+			radius = Double.parseDouble(tf1.getText());
+			area = Math.pow(radius, 2) * Math.PI;
 			
-		radius = Double.parseDouble(tf1.getText());
-		area = Math.pow(radius, 2) * Math.PI;
-		
-		//소숫점 2자리만 잘라서 나타낸다.
-		tf2.setText(String.format("%.2f", area));
+			//소숫점 2자리만 잘라서 나타낸다.
+			tf2.setText(String.format("%.2f", area));
+		}
+		else if (btn == btn2) {
+			//Cancel 버튼 클릭
+			tf1.setText("");
+			tf2.setText("");
+		}
 	}
 	
 	public static void main(String[] args) {
