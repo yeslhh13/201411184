@@ -1,6 +1,6 @@
 package com.sd.io;
 /**
- * 파일을 작성하는 클래스
+ * writes file
  * @author Noh Ye-seul
  * @version 1.0
  * @see java.io.FileWriter
